@@ -5,8 +5,6 @@ async function fetchProjectsData() {
 
   const json = await resultFetch.json();
 
-  console.log(json);
-
   const arrayData = json.items.map((item) => {
     return {
       imageId: item.fields.image.sys.id,
@@ -25,8 +23,37 @@ async function fetchProjectsData() {
   });
 
   const arrayDataSorted = arrayData.sort((a, b) => {
-    console.log(a.id, b.id);
+    return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+  });
 
+  return arrayDataSorted;
+}
+
+async function fetchTechnologiesIcons() {
+  const resultFetch = await fetch(
+    "https://cdn.contentful.com/spaces/nfckvg6bxiqt/environments/master/entries?access_token=UlAA-NdKS06UgWd3isjDU58pLoyrlL1xDJJ6ZcnMRXE&content_type=technologiesIcons"
+  );
+
+  const json = await resultFetch.json();
+
+  console.log(json);
+
+  const arrayData = json.items.map((item) => {
+    return {
+      imageId: item.fields.icon.sys.id,
+      title: item.fields.title,
+      id: item.fields.iconID,
+    };
+  });
+
+  const arrayIncludes = json.includes.Asset;
+
+  arrayData.forEach((x) => {
+    let idEncontrado = searchAsset(x.imageId, arrayIncludes);
+    x.image = idEncontrado.fields.file.url;
+  });
+
+  const arrayDataSorted = arrayData.sort((a, b) => {
     return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
   });
 
@@ -40,4 +67,4 @@ function searchAsset(assetID, arrayIncludes) {
   return coincidenciaID;
 }
 
-export { fetchProjectsData };
+export { fetchProjectsData, fetchTechnologiesIcons };

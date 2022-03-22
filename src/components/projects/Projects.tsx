@@ -1,10 +1,10 @@
 import React from "react";
 import css from "components/projects/projects.css";
 import { ProjectCard } from "components/project-card/ProjectCard";
-import { projectsData } from "hooks/hooks";
+import { useGetProjectsData } from "hooks/hooks";
 
 export const Projects = () => {
-  const data = projectsData();
+  const data = useGetProjectsData();
   return (
     <article id="projects" className={css.root}>
       <h2 className={css.subtitle}>Mis proyectos</h2>

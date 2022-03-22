@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchProjectsData } from "lib/API/API";
+import { fetchProjectsData, fetchTechnologiesIcons } from "lib/API/API";
 
 function useWindowSize() {
   const [windowSize, setWindowSize] = useState(null);
@@ -32,7 +32,7 @@ function useChangeNavColor() {
   return navOption;
 }
 
-function projectsData() {
+function useGetProjectsData() {
   const [data, setData] = useState([] as any);
   useEffect(() => {
     fetchProjectsData().then((data) => {
@@ -44,4 +44,21 @@ function projectsData() {
   return data;
 }
 
-export { useWindowSize, useChangeNavColor, projectsData };
+function useGetTechIcons() {
+  const [data, setData] = useState([] as any);
+  useEffect(() => {
+    fetchTechnologiesIcons().then((data) => {
+      if (data) {
+        setData(data);
+      }
+    });
+  }, []);
+  return data;
+}
+
+export {
+  useWindowSize,
+  useChangeNavColor,
+  useGetProjectsData,
+  useGetTechIcons,
+};
