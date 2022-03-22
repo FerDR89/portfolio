@@ -1,0 +1,27 @@
+/*-----------Layout-------------*/
+.header {
+  height: 10vh;
+}
+
+.main {
+  min-height: 80vh;
+}
+
+.footer {
+  height: 10vh;
+}
+
+.header,
+.main,
+.footer {
+  max-width: 768px;
+}
+
+@media (min-width: 769px) {
+  .header,
+  .main,
+  .footer {
+    max-width: 1200px;
+    width: 1200px;
+  }
+}
