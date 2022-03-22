@@ -6,7 +6,7 @@ import {
   GithubIcon,
   LinkedinIcon,
   MailIcon,
-} from "lib/font-awesome/fontAwesome";
+} from "lib/font-awesome/FontAwesome";
 
 function BurgerMenu() {
   const [status, setStatus] = useState("hamburger__close");

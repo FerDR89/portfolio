@@ -4,7 +4,7 @@ import {
   GithubIcon,
   LinkedinIcon,
   MailIcon,
-} from "lib/font-awesome/fontAwesome";
+} from "lib/font-awesome/FontAwesome";
 
 export const MyFooter = () => {
   return (
