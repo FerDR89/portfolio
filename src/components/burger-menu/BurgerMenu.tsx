@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { useChangeNavColor } from "hooks/hooks";
 import css from "components/burger-menu/burgerMenu.css";
 import { MyButton } from "ui/link-button/LinkButton";
-import {
-  GithubIcon,
-  LinkedinIcon,
-  MailIcon,
-} from "lib/font-awesome/FontAwesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function BurgerMenu() {
   const [status, setStatus] = useState("hamburger__close");
@@ -74,7 +72,14 @@ function BurgerMenu() {
           <div className={css.social__container}>
             <div className={css.icon__container}>
               <a href="mailto:ferderow@gmail.com">
-                {MailIcon("30px", "40px", "whitesmoke")}
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  style={{
+                    width: "30px",
+                    height: "40px",
+                    color: "whitesmoke",
+                  }}
+                />
               </a>
             </div>
             <div className={css.icon__container}>
@@ -82,12 +87,26 @@ function BurgerMenu() {
                 href="https://www.linkedin.com/in/fernando-de-row/"
                 target="_blank"
               >
-                {LinkedinIcon("30px", "40px", "whitesmoke")}
+                <FontAwesomeIcon
+                  icon={faLinkedinIn}
+                  style={{
+                    width: "30px",
+                    height: "40px",
+                    color: "whitesmoke",
+                  }}
+                />
               </a>
             </div>
             <div className={css.icon__container}>
               <a href="https://github.com/FerDR89" target="_blank">
-                {GithubIcon("40px", "40px", "whitesmoke")}
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    color: "whitesmoke",
+                  }}
+                />
               </a>
             </div>
           </div>
