@@ -18,3 +18,9 @@
   justify-content: center;
   cursor: pointer;
 }
+
+.text {
+  font-family: "Orbitron", "sans-serif";
+  color: aliceblue;
+  font-weight: 600;
+}

@@ -8,6 +8,7 @@ export const MyFooter = () => {
   return (
     <article id="contacto" className={css.root}>
       <div className={css.social__container}>
+        <p className={css.text}>Contacto</p>
         <div className={css.icon__container}>
           <a href="mailto:ferderow@gmail.com">
             <FontAwesomeIcon
