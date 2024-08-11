@@ -1,0 +1,23 @@
+.text_title {
+  font-size: 2.125em;
+  font-weight: 700;
+  color: var(--primary-font-color);
+  font-family: var(--secondary-font);
+}
+
+.text_subtitle {
+  font-size: 1.875em;
+  font-weight: 700;
+  color: var(--primary-font-color);
+  font-family: var(--secondary-font);
+}
+
+.text_bold {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--secondary-font-color);
+}
+.text_body {
+  font-size: 1em;
+  color: var(--secondary-font-color);
+}
