@@ -1,0 +1,9 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 16px;
+  box-shadow: rgb(40, 59, 115) 1px 1px 10px;
+  padding: 16px;
+  max-width: 650px;
+}
