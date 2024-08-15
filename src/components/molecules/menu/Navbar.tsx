@@ -17,15 +17,10 @@ function Navbar() {
           </a>
         </li>
         <li className={css.item}>
-          <a href="#about-me" className={css.link}>
+          <a href="#aboutMe" className={css.link}>
             {navbarLinks.aboutMe}
           </a>
         </li>
-        {/* <li className={css.item}>
-          <a href="mailTo:ferderow@gmail.com" className={css.link}>
-            {navbarLinks.contact}
-          </a>
-        </li> */}
       </ul>
     </nav>
   );

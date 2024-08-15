@@ -29,10 +29,15 @@
   }
 }
 
+.item {
+  border-bottom: 1px solid transparent;
+}
+
 @media (min-width: 800px) {
   .item:hover {
-    border-bottom: 1px solid var(--primary-button-color);
+    border-bottom: 1px solid var(--primary-font-color);
     border-radius: 3px;
+    transition: all 0.5s linear;
   }
 }
 
