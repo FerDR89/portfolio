@@ -20,9 +20,9 @@ const Text = ({ tag, text, customStyle = {} }: TextProps) => {
       </h2>
     ),
     ["text-bold"]: (
-      <h3 className={css.text_bold} style={customStyle}>
+      <p className={css.text_bold} style={customStyle}>
         {text}
-      </h3>
+      </p>
     ),
     ["text-body"]: (
       <p className={css.text_body} style={customStyle}>
