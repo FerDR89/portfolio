@@ -7,17 +7,17 @@ import css from "./socialIcons.css";
 const SocialIcons = () => {
   return (
     <div className={css.social_container}>
-      <div className={css.icon_container}>
+      <div className={css.icon_container} id={css.gmail}>
         <a href="mailto:ferderow@gmail.com">
           <Icon name={faEnvelope} height="40px" width="20px" />
         </a>
       </div>
-      <div className={css.icon_container}>
+      <div className={css.icon_container} id={css.linkedin}>
         <a href="https://www.linkedin.com/in/fernando-de-row/" target="_blank">
           <Icon name={faLinkedinIn} height="40px" width="20px" />
         </a>
       </div>
-      <div className={css.icon_container}>
+      <div className={css.icon_container} id={css.github}>
         <a href="https://github.com/FerDR89" target="_blank">
           <Icon name={faGithub} height="30px" width="30px" />
         </a>
