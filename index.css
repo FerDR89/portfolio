@@ -1,22 +1,43 @@
 * {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "Montserrat", "sans-serif";
-  /* font-family: "Orbitron", "sans-serif"; */
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
+  --dark-main-bg-color: #000;
+  --dark-bg-color: #060c21;
+  --primary-font: Montserrat, sans-serif;
+  --secondary-font: Orbitron, sans-serif;
+  --primary-font-color: #f5f5f5;
+  --secondary-font-color: #cbc7c7;
+  --primary-button-color: rgb(51 47 47 / 40%);
+  --scrollbar-color-thumb: rgb(40, 59, 115);
+  --scrollbar-color-track: rgba(255, 255, 255, 0.5);
 }
 
 body {
-  margin: 0px;
   min-height: 100vh;
+  background-color: var(--dark-main-bg-color);
 }
 
-@media (min-width: 769px) {
-  .root {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #310147;
-  }
+::-webkit-scrollbar {
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-color-track);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: var(--scrollbar-color-thumb);
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  scroll-margin: 10vh;
 }
