@@ -2,7 +2,7 @@ import React from "react";
 import css from "./myFooter.css";
 import SocialIcons from "components/molecules/social-icons/SocialIcons";
 import Text from "components/atoms/text/Text";
-import { contact } from "constants/constans";
+import { contact } from "constants/constants";
 
 export const MyFooter = () => {
   return (

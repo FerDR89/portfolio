@@ -7,7 +7,7 @@ import {
   name,
   profession,
   download,
-} from "../../../constants/constans";
+} from "../../../constants/constants";
 import cv from "assets/cv.pdf";
 
 const Welcome = () => {
