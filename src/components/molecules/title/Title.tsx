@@ -1,6 +1,6 @@
 import React from "react";
 import Text from "components/atoms/text/Text";
-import { titles } from "constants/constans";
+import { titles } from "constants/constants";
 import css from "./title.css";
 
 interface TitleProps {
