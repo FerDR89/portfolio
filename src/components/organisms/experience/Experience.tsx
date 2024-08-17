@@ -1,17 +1,14 @@
 import React from "react";
 import css from "./experience.css";
 import ExperienceCard from "components/molecules/experience-card/ExperienceCard";
-import Text from "components/atoms/text/Text";
 import { useGetExperience } from "hooks/hooks";
+import Title from "components/molecules/title/Title";
 
 const Experience = () => {
   const data = useGetExperience();
   return (
     <section className={css.root} id="experience">
-      <div className={css.title_container}>
-        <Text tag="subtitle" text="Experiencia profesional" />
-      </div>
-
+      <Title section="experience" />
       <ul className={css.container}>
         {data.map(
           ({ company, position, date, description, tech_stack }, index) => (

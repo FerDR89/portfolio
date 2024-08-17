@@ -1,14 +1,13 @@
 import React from "react";
 import css from "./about.css";
 import Text from "components/atoms/text/Text";
-import { aboutMe } from "constants/constans";
+import Title from "components/molecules/title/Title";
+import { aboutMe } from "constants/constants";
 
 const AboutMe = () => {
   return (
     <section id="aboutMe" className={css.root}>
-      <div className={css.title_container}>
-        <Text tag="subtitle" text="Sobre mi" />
-      </div>
+      <Title section="aboutMe" />
       <Text
         tag="text-body"
         text={aboutMe}
