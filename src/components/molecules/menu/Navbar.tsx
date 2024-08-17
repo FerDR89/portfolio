@@ -1,6 +1,6 @@
 import React from "react";
 import css from "./navbar.css";
-import { navbarLinks } from "constants/constans";
+import { navbarLinks } from "constants/constants";
 
 function Navbar() {
   return (
@@ -12,8 +12,8 @@ function Navbar() {
           </a>
         </li>
         <li className={css.item}>
-          <a href="#projects" className={css.link}>
-            {navbarLinks.projects}
+          <a href="#stack" className={css.link}>
+            {navbarLinks.stack}
           </a>
         </li>
         <li className={css.item}>

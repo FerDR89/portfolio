@@ -23,7 +23,7 @@
   justify-content: space-evenly;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 769px) {
   .list {
     grid-area: nav;
   }
@@ -33,7 +33,7 @@
   border-bottom: 1px solid transparent;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 769px) {
   .item:hover {
     border-bottom: 1px solid var(--primary-font-color);
     border-radius: 3px;
