@@ -5,8 +5,8 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  --dark-main-bg-color: #000;
-  --dark-bg-color: #060c21;
+  --dark-main-bg-color: #070618;
+  --dark-bg-color: #02061c;
   --primary-font: Montserrat, sans-serif;
   --secondary-font: Orbitron, sans-serif;
   --primary-font-color: #f5f5f5;
@@ -39,5 +39,5 @@ ul {
 }
 
 section {
-  scroll-margin: 10vh;
+  scroll-margin: 5vh;
 }
