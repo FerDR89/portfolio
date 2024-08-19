@@ -13,7 +13,7 @@ import cv from "assets/cv.pdf";
 const Welcome = () => {
   return (
     <section className={css.root}>
-      <div>
+      <div className={css.text_container}>
         <Text
           tag="text-bold"
           text={greeting}
