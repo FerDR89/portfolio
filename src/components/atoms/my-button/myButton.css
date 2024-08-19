@@ -9,6 +9,7 @@
   border-radius: 10px;
   background-color: var(--primary-button-color);
   box-shadow: 2px 2px 3px rgb(40, 59, 115);
+  animation: buttonAnim 2s ease 0s 1 normal forwards;
 }
 
 .button {
@@ -17,4 +18,48 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+@keyframes buttonAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateX(1300px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(-68px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
 }
