@@ -20,12 +20,10 @@ const ExperienceCard = ({
 }: ExperienceCardProps) => {
   const chainedTechStack = techStack.join(", ");
   const liEl = useRef<HTMLLIElement>(null);
-  const inView: Boolean = useOberver(liEl, {
-    threshold: 0.25,
-  });
+  const inView: Boolean = useOberver(liEl);
 
   return (
-    <li className={`${inView && css.root}`} ref={liEl}>
+    <li className={`${inView ? css.root : {}}`} ref={liEl}>
       <div>
         <Text
           tag="text-body"

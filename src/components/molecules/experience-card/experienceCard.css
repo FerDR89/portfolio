@@ -6,7 +6,7 @@
   box-shadow: rgb(40, 59, 115) 1px 1px 10px;
   padding: 16px;
   max-width: 650px;
-  animation: fadeInBottom 2s ease 0s 1 normal forwards;
+  animation: fadeInBottom 1s linear 0s 1 normal forwards;
 }
 
 @keyframes fadeInBottom {
