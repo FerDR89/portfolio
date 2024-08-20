@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import css from "./experienceCard.css";
 import Text from "components/atoms/text/Text";
+import { useOberver } from "hooks/hooks";
 
 interface ExperienceCardProps {
   company: string;
@@ -18,8 +19,13 @@ const ExperienceCard = ({
   techStack,
 }: ExperienceCardProps) => {
   const chainedTechStack = techStack.join(", ");
+  const liEl = useRef<HTMLLIElement>(null);
+  const inView: Boolean = useOberver(liEl, {
+    threshold: 0.25,
+  });
+
   return (
-    <li className={css.root}>
+    <li className={`${inView && css.root}`} ref={liEl}>
       <div>
         <Text
           tag="text-body"
