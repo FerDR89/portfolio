@@ -41,11 +41,7 @@ const Welcome = () => {
 
       <div className={css.button_container}>
         <MyButton>
-          <a
-            className={css.link}
-            href={cv}
-            download={"React Native Developer - de Row Fernando"}
-          >
+          <a href={cv} download={"React Native Developer - de Row Fernando"}>
             <Text tag="text-body" text={download} />
           </a>
         </MyButton>

@@ -12,10 +12,6 @@
   margin: 30px 0px 15px 0px;
 }
 
-.link {
-  text-decoration: none;
-}
-
 .text_container {
   animation: textAnim 2s ease 0s 1 normal forwards;
 }
