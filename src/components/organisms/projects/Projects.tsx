@@ -1,16 +1,14 @@
 import React from "react";
 import css from "./projects.css";
-import { ProjectCard } from "components/molecules/project-card/ProjectCard";
+import Title from "components/molecules/title/Title";
+import ProjectCard from "components/molecules/project-card/ProjectCard";
 import { useGetProjectsData } from "hooks/hooks";
-import Text from "components/atoms/text/Text";
 
-export const Projects = () => {
+const Projects = () => {
   const data = useGetProjectsData();
   return (
     <section className={css.root} id="projects">
-      <div className={css.title_container}>
-        <Text tag="subtitle" text="Mis proyectos" />
-      </div>
+      <Title section="projects" />
       <div className={css.container}>
         {data.map((x) => {
           return (
@@ -18,8 +16,8 @@ export const Projects = () => {
               key={x.linkRepo}
               title={x.title}
               img={"https:" + x.image}
-              linkDeploy={x.linkDeploy}
               linkRepo={x.linkRepo}
+              description={x.description}
             />
           );
         })}
@@ -27,3 +25,5 @@ export const Projects = () => {
     </section>
   );
 };
+
+export default Projects;
