@@ -6,15 +6,13 @@ async function fetchProjectsData() {
 
   const json = await resultFetch.json();
 
-  const data = json.items.map(({ fields }) => {
-    return {
-      imageId: fields.image.sys.id,
-      linkDeploy: fields.linkDeploy,
-      linkRepo: fields.linkRepo,
-      title: fields.title,
-      id: fields.idProject,
-    };
-  });
+  const data = json.items.map(({ fields }) => ({
+    imageId: fields.image.sys.id,
+    linkRepo: fields.linkRepo,
+    title: fields.title,
+    id: fields.idProject,
+    description: fields.description,
+  }));
 
   const arrayIncludes = json.includes.Asset;
 
