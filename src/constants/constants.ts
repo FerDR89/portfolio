@@ -36,3 +36,5 @@ export const stackHoverBackground = {
   Git: "rgb(244, 84, 52)",
   Postman: "rgb(255, 108, 55)",
 };
+
+export const repository = "Repositorio";
