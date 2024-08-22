@@ -1,6 +1,7 @@
 .root {
   width: 100%;
-  min-height: 90vh;
+  min-height: 50vh;
+  padding-bottom: 60px;
 }
 
 .container {
