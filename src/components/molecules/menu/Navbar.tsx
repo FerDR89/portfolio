@@ -12,10 +12,16 @@ function Navbar() {
           </a>
         </li>
         <li className={css.item}>
+          <a href="#projects" className={css.link}>
+            {"Proyectos"}
+          </a>
+        </li>
+        <li className={`${css.item}, ${css.show}`}>
           <a href="#stack" className={css.link}>
             {navbarLinks.stack}
           </a>
         </li>
+
         <li className={css.item}>
           <a href="#aboutMe" className={css.link}>
             {navbarLinks.aboutMe}
