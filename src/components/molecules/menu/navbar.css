@@ -60,10 +60,16 @@
 
 .show {
   display: none;
+  border-bottom: 1px solid transparent;
 }
 
 @media (min-width: 769px) {
   .show {
     display: flex;
+  }
+  .show:hover {
+    border-bottom: 1px solid var(--primary-font-color);
+    border-radius: 3px;
+    transition: all 0.5s linear;
   }
 }
