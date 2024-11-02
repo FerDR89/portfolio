@@ -23,7 +23,7 @@ const ExperienceCard = ({
   const inView: Boolean = useOberver(liEl);
 
   return (
-    <li className={`${inView ? css.root : {}}`} ref={liEl}>
+    <li className={`${inView ? css.root : css.noShow}`} ref={liEl}>
       <div>
         <Text
           tag="text-body"

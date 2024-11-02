@@ -9,9 +9,13 @@
   animation: fadeInBottom 1s linear 0s 1 normal forwards;
 }
 
+.noShow {
+  opacity: 0;
+}
+
 @keyframes fadeInBottom {
   0% {
-    opacity: 0;
+    opacity: 0.5;
     transform: translateY(50px);
   }
 
