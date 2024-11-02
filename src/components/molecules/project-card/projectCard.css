@@ -11,6 +11,10 @@
   transition: box-shadow 0.75s linear;
 }
 
+.noShow {
+  opacity: 0;
+}
+
 .root:hover {
   box-shadow: rgb(255, 255, 255) 1px 1px 10px;
 }

@@ -24,7 +24,7 @@ const ProjectCard = ({
   const inView: Boolean = useOberver(containerEl);
 
   return (
-    <article className={`${inView ? css.root : {}}`} ref={containerEl}>
+    <article className={`${inView ? css.root : css.noShow}`} ref={containerEl}>
       <div className={css.title_container}>
         <Text tag="text-bold" text={title} />
       </div>
