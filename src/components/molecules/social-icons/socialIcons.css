@@ -15,25 +15,23 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.5s linear;
 }
 
 @media (min-width: 800px) {
   #gmail:hover {
-    transition: all 0.5s linear;
     background-color: #d44638;
     border-color: #d44638;
     scale: 1.1;
   }
 
   #linkedin:hover {
-    transition: all 0.5s linear;
     background-color: #0077b5;
     border-color: #0077b5;
     scale: 1.1;
   }
 
   #github:hover {
-    transition: all 0.5s linear;
     background-color: #6e5494;
     border-color: #6e5494;
     scale: 1.1;
