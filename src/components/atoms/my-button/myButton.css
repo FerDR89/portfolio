@@ -10,6 +10,11 @@
   background-color: var(--primary-button-color);
   box-shadow: 2px 2px 3px rgb(40, 59, 115);
   animation: buttonAnim 2s ease 0s 1 normal forwards;
+  transition: background-color 1s ease-in-out;
+}
+
+.button_container:hover {
+  background-color: var(--hover-button-color);
 }
 
 .button {
