@@ -3,7 +3,7 @@ import css from "./about.css";
 import Text from "components/atoms/text/Text";
 import Title from "components/molecules/title/Title";
 import { aboutMe } from "constants/constants";
-import programming from "assets/programming.png";
+import programming from "assets/programming.webp";
 
 const AboutMe = () => {
   return (
