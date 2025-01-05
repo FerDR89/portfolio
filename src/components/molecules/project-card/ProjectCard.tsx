@@ -39,6 +39,7 @@ const ProjectCard = ({
             src={img}
             alt={"Vista previa del proyecto:" + title}
             className={css.project_img}
+            loading="lazy"
           />
         </a>
       </div>
