@@ -10,6 +10,7 @@ type PropsSearchResult = {
 
 const StackCard = ({ title, img }: PropsSearchResult) => {
   const hoverRef = useRef(null);
+
   const mouseOver = (event) => {
     event.preventDefault();
     hoverRef.current.style[
@@ -30,7 +31,12 @@ const StackCard = ({ title, img }: PropsSearchResult) => {
       ref={hoverRef}
     >
       <div className={css.img_container}>
-        <img src={img} alt={"Icono de:" + title} className={css.img} />
+        <img
+          src={img}
+          alt={"Icono de: " + title}
+          className={css.img}
+          loading="lazy"
+        />
       </div>
       <div className={css.title_container}>
         <Text
